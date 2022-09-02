@@ -33,6 +33,9 @@
     "build-package-css": "cp src/assets/css/material-dashboard-react.css dist/material-dashboard-react.css",
     "build-package": "npm run build-package-css && babel src --out-dir dist"
   },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/steps"
+  },
   "repository": {
     "type": "git",
     "url": "git+git@github.com:rocketseat-experts-club/testando-ui-cypress-2021-06-24.git"
@@ -45,6 +48,7 @@
     "typescript": "4.2.4"
   },
   "devDependencies": {
+    "cypress-cucumber-preprocessor": "^4.3.1",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-prettier": "3.4.0",
     "gulp": "4.0.2",
